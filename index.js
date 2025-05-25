@@ -27,4 +27,10 @@ const createElement = (titletext, bodytext) => {
   body.innerHTML = bodytext;
 };
 
+const refreshButton = document.getElementById("refreshBtn");
+refreshButton.addEventListener("click", () => {
+  container.innerHTML = "";
+  GetData();
+});
+
 GetData();
